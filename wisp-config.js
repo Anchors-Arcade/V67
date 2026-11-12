@@ -1,10 +1,10 @@
 // Settings for your hosted copy
-const WISP_URL = "wss://anchors-arcade-proxeyy.onrender.com/wisp/";
+const WISP_URL = "wss://anura.pro/wisp/";
 
-// Wake the free Render server as soon as the page opens, so it is (mostly)
+// Ping the wisp host as soon as the page opens, so it is (mostly)
 // awake by the time you press Enter. Harmless if it is already running.
 try {
-	fetch(WISP_URL.replace("wss://", "https://").replace("/wisp/", "/"), {
+	fetch(WISP_URL.replace("wss://", "https://").replace(/\/wisp\/?$/, "/"), {
 		mode: "no-cors",
 	}).catch(() => {});
 } catch (e) {}

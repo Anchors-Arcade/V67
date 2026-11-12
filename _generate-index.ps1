@@ -671,7 +671,7 @@ let favs   = new Set(store.get("gn_favs", []));
 let recent = store.get("gn_recent", []).filter(f=>byFile.has(f));
 
 /* ============================== SETTINGS ============================== */
-const DEFAULT_WISP = (typeof WISP_URL==="string" && WISP_URL) ? WISP_URL : "wss://anchors-arcade-proxeyy.onrender.com/wisp/";
+const DEFAULT_WISP = (typeof WISP_URL==="string" && WISP_URL) ? WISP_URL : "wss://anura.pro/wisp/";
 const settings={
   theme:   store.get("gn_theme","purple"),
   cards:   store.get("gn_cards","m"),
